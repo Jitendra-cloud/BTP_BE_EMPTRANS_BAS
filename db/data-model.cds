@@ -10,7 +10,7 @@ entity EMP_DUMMY : cuid, managed {
     NAME : String(255);
 }
 
-@cds.persistence.exists
+//@cds.persistence.exists
 entity EMP : cuid, managed {
     EMP_ID_EXT : String(255);
     NAME       : String(255);
@@ -19,12 +19,12 @@ entity EMP : cuid, managed {
     DEPARTMENT : Association to one DEPARTMENT;
 }
 
-@cds.persistence.exists
+//@cds.persistence.exists
 entity DEPARTMENT : cuid, managed {
     NAME : String(50);
 }
 
-@cds.persistence.exists
+//@cds.persistence.exists
 entity EMP_DASHBOARD : cuid {
     EMP_ID_EXT      : String(255);
     NAME            : String(255);
