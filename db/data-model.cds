@@ -31,9 +31,15 @@ entity EMP_DASHBOARD : cuid {
     DEPARTMENT_NAME : String(50);
 }
 
+entity EMPLOYEEDB : cuid, managed {
+    EMP_FRONTED_ID : String(255);
+    NAME           : String(255);
+}
+
 @cds.persistence.skip
 entity EMP_LOCAL_INFO {
-    key ID       : String(36);
-        NAME     : String(255);
-        EMAIL_ID : String(255);
+    key ID         : String(36);
+        NAME       : String(255);
+        EMAIL_ID   : String(255);
+        DEPARTMENT : String(255);
 }

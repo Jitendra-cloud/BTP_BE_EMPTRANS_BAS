@@ -8,3 +8,7 @@ module.exports._getEmployeeDetails =  function (req) {
         }
     ];
 }
+
+module.exports._generateEmpId = function(req) {
+    
+}

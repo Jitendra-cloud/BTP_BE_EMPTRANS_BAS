@@ -9,5 +9,7 @@ service EmployeeTransactional @( impl: './employee.js') {
     
     @readonly entity EmployeeDashboard as select from bb.EMP_DASHBOARD;
 
-    entity EmployeeLocal as select from bb.EMP_LOCAL_INFO
+    entity EmployeeLocal as select from bb.EMP_LOCAL_INFO;
+
+    entity Employeedb as select from bb.EMPLOYEEDB;
 }
