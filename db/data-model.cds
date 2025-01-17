@@ -31,7 +31,7 @@ entity EMP_DASHBOARD : cuid {
     DEPARTMENT_NAME : String(50);
 }
 
-entity EMPLOYEEDB : cuid, managed {
+entity EMPLOYEEDTBS : cuid, managed {
     EMP_FRONTED_ID : String(255);
     NAME           : String(255);
 }

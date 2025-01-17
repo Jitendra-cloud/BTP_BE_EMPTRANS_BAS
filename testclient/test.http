@@ -2,7 +2,31 @@
 GET http://localhost:4004/odata/v2/employee-transactional/EmployeeLocal
 
 ### Get Employee Data
-GET http://localhost:4004/odata/v2/employee-transactional/Employeedb;
+GET http://localhost:4004/odata/v2/employee-transactional/EmployeeDashboard
 
-### Get Employee Data
-GET http://localhost:4004/odata/v2/employee-transactional/Employees
+### Post Employee DB Data
+POST http://localhost:4004/odata/v2/employee-transactional/Employeedb
+Content-Type: application/json
+
+{
+    "NAME" : "Sumit2"
+}
+
+### Post Employee Data
+POST http://localhost:4004/odata/v2/employee-transactional/EmployeeDashboard
+Content-Type: application/json
+
+{
+    "EMP_ID_EXT" : "TEST1",
+    "NAME" : "Jitendra",
+    "DEPARTMENT_NAME": "Technical"
+
+}
+
+### Post Department
+POST http://localhost:4004/odata/v2/employee-transactional/Department
+Content-Type: application/json
+
+{
+    "NAME" : "Human Resources"
+}

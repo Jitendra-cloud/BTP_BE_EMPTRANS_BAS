@@ -34,8 +34,6 @@ modules:
       buildpack: nodejs_buildpack
     requires:
       - name: btp_be_emptrans-db
-        properties:
-          TARGET_CONTAINER: ~{hdi-container-name}
 
 resources:
   - name: btp_be_emptrans-db
@@ -43,5 +41,3 @@ resources:
     parameters:
       service: hana
       service-plan: hdi-shared
-    properties:
-      hdi-container-name: ${service-name}

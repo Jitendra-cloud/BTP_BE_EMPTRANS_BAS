@@ -10,5 +10,7 @@ module.exports._getEmployeeDetails =  function (req) {
 }
 
 module.exports._generateEmpId = function(req) {
-    
+    console.log(
+        'Executed before create'
+    )
 }
